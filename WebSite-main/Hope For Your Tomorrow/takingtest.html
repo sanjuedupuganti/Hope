@@ -1,0 +1,88 @@
+<html>
+  <head>
+    <title>Anxiety Quiz</title>
+      <link rel="stylesheet" type="text/css" href="takingtestcss.css">
+      <link rel="stylesheet" type="text/css" href="styles10.css">
+    <script>
+      function calculateScore() {
+        let score = 0;
+        const q1 = document.querySelector('input[name="q1"]:checked').value;
+        const q2 = document.querySelector('input[name="q2"]:checked').value;
+        const q3 = document.querySelector('input[name="q3"]:checked').value;
+        const q4 = document.querySelector('input[name="q4"]:checked').value;
+        score += parseInt(q1);
+    score += parseInt(q2);
+    score += parseInt(q3);
+    score += parseInt(q4);
+    let result = '';
+      if (score >= 0 && score <= 4) {
+        result = 'You have a low level of anxiety.';
+      } else if (score >= 5 && score <= 9) {
+        result = 'You have a moderate level of anxiety.';
+      } else if (score >= 10 && score <= 14) {
+        result = 'You have a high level of anxiety.';
+      } else {
+        result = 'You are fine!';
+      }
+      document.getElementById("result1").innerHTML = "your score is: "+score +"/16";
+    document.getElementById("result").innerHTML = result;
+  }
+</script>
+  </head>
+  <body>
+    <h1>Anxiety Quiz</h1>
+    <pre style="font-size: 18px;font-weight: bold;text-align: center;">Please answer the following questions:</pre>
+    <form>
+      <p>1. Do you worry about lots of different things?</p>
+      <input type="radio" name="q1" value="0">Never<br>
+      <input type="radio" name="q1" value="1">Rarely<br>
+      <input type="radio" name="q1" value="2">Sometimes<br>
+      <input type="radio" name="q1" value="3">Often<br>
+      <input type="radio" name="q1" value="4">Very Often<br><br>
+  <p>2. Do you have trouble controlling your worries?</p>
+  <input type="radio" name="q2" value="0">Never<br>
+  <input type="radio" name="q2" value="1">Rarely<br>
+  <input type="radio" name="q2" value="2">Sometimes<br>
+  <input type="radio" name="q2" value="3">Often<br>
+  <input type="radio" name="q2" value="4">Very Often<br><br>
+
+  <p>3. Do you get irritable and/or easily annoyed when anxious?</p>
+  <input type="radio" name="q3" value="0">Never<br>
+  <input type="radio" name="q3" value="1">Rarely<br>
+  <input type="radio" name="q3" value="2">Sometimes<br>
+  <input type="radio" name="q3" value="3">Often<br>
+  <input type="radio" name="q3" value="4">Very Often<br><br>
+
+  <p>4. Does worry or anxiety make you feel fatigued or worn out?</p>
+  <input type="radio" name="q4" value="0">Never<br>
+  <input type="radio" name="q4" value="1">Rarely<br>
+  <input type="radio" name="q4" value="2">Sometimes<br>
+  <input type="radio" name="q4" value="3">Often<br>
+  <input type="radio" name="q4" value="4">Very Often<br><br>
+  <input type="button" value="Submit" onclick="calculateScore()">
+</form>
+<div id="result1" style="text-align:center;"></div>
+<div id="result" style="text-align:center;"></div>
+    <div class="cantainer">
+      <div class="atem">
+        <h2>Video Referral</h2>
+        <p><iframe width="250" height="150" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video Referral"></iframe></p>
+        <p><a href="#">View More Videos</a></p>
+      </div>
+      <div class="atem">
+        <h2>Book Referral</h2>
+        <p><img src="steve-jobs.jpg" alt="Book Cover"></p>
+        <p><strong>Title:</strong> <a href="#">Be Stable</a></p>
+        <p><strong>Author:</strong> Steve Jobs</p>
+        <p><a href="Stilldeveloping.html">View More Books</a></p>
+      </div>
+      <div class="atem">
+        <h2>Psychologist Referral</h2>
+        <p><img src="https://via.placeholder.com/250x150" alt="Psychologist Photo"></p>
+        <p><strong>Name:</strong> Psychologist Name</p>
+        <p><strong>Specialty:</strong> Specialty Area</p>
+        <p><a href="Stilldeveloping.html">View More Psychologists</a></p>
+      </div>
+    </div>
+  </body>
+</html>

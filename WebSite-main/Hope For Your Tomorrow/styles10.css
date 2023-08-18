@@ -1,0 +1,25 @@
+      .cantainer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 20px;
+      }
+      .atem {
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        box-shadow: 2px 2px 5px #ccc;
+        text-align: center;
+      }
+      .atem h2 {
+        margin-top: 0;
+      }
+      .atem a {
+        color: #007acc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      .atem a:hover {
+        text-decoration: underline;
+      }

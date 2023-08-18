@@ -1,0 +1,28 @@
+ul {
+	 background-color: lightskyblue;
+	 overflow: hidden;
+	 padding: 0;
+	 margin: 0;
+	 list-style-type: none;
+}
+li {
+	float: down;
+}
+   li a{
+   	    text-align: centre;
+   	    color: black;
+   	    padding: 0px;
+   	    margin-left: 25px;
+   	    text-decoration: unset;
+   	    display: block;
+   }
+   li a pre{
+   	font-size: 20px;
+   }
+   li a pre:hover{
+   	    background-color: ghostwhite;
+   	    color: red;
+   	    padding: -25px;
+   	    border-style: solid;
+   	    border-color: red;
+   }
